@@ -292,21 +292,21 @@
 //     console.log("Gross Salary = ",gross_salary);
 // }
 // Question # 21
-var units = Number(prompt("Enter total numbers of units"));
+var units = Number(prompt("Enter total units"));
 var bill = 0;
 if (units <= 50) {
-    bill = units * 0.5;
-    console.log("Your total bill = ", bill);
+    bill = (units * 0.50) + (units * 0.20);
+    console.log("Total bill =", bill);
 }
 else if (units <= 150) {
-    bill = units * 0.75;
-    console.log("Your total bill = ", bill);
+    bill = (units * 0.75) + (units * 0.20);
+    console.log("Total bill =", bill);
 }
 else if (units <= 250) {
-    bill = units * 1.20;
-    console.log("Your total bill = ", bill);
+    bill = (units * 1.2) + (units * 0.20);
+    console.log("Total bill =", bill);
 }
 else {
-    bill = units * 1.5;
-    console.log("Your total bill = ", bill);
+    bill = (units * 1.5) + (units * 0.20);
+    console.log("Total bill =", bill);
 }

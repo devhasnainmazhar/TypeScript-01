@@ -342,4 +342,22 @@
 
 // Question # 21
 
-// git 
+let units : number = Number(prompt("Enter total units"));
+let bill : number = 0 ;
+
+if(units <= 50){
+    bill = (units * 0.50) + (units * 0.20); 
+    console.log("Total bill =",bill);
+}
+else if(units <= 150){
+    bill = (units * 0.75) + (units * 0.20); 
+    console.log("Total bill =",bill);
+}
+else if(units <= 250){
+    bill = (units * 1.2) + (units * 0.20); 
+    console.log("Total bill =",bill);
+}
+else {
+    bill = (units * 1.5) + (units * 0.20); 
+    console.log("Total bill =",bill);
+}
